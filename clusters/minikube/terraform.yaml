@@ -13,6 +13,9 @@ spec:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
+  vars:
+    - name: aws_region
+      value: "eu-west-1"
   runnerPodTemplate:
     spec:
       envFrom:
