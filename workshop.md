@@ -156,8 +156,8 @@ spec:
     name: flux-system
     namespace: flux-system
   vars:
-  - name: region
-    value: eu-west-1
+  - name: aws_region
+    value: "eu-west-1"
   runnerPodTemplate:
     spec:
       envFrom:
