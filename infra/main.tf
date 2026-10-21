@@ -7,8 +7,12 @@ terraform {
   }
 }
 
+variable "aws_region" {
+  type = string
+}
+
 provider "aws" {
-  region = "eu-west-1"
+  region = var.aws_region
 }
 
 data "aws_iam_policy_document" "this" {
