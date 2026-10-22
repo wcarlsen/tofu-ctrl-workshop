@@ -164,3 +164,15 @@ spec:
         - secretRef:
             name: aws-credentials
 ```
+
+## Bonus goals
+
+* Locate plans and states as Kubernetes Secrets
+* Try backup and restore of state https://flux-iac.github.io/tofu-controller/use-tf-controller/backup-and-restore-a-Terraform-state/
+* Try branch-planner https://flux-iac.github.io/tofu-controller/branch-planner/branch-planner-getting-started/
+* Write output to secrets https://flux-iac.github.io/tofu-controller/use-tf-controller/provision-resources-obtain-outputs/
+* Create multiple Terraform resources and use dependsOn
+* Perform healthChecks using outputs https://flux-iac.github.io/tofu-controller/use-tf-controller/provision-Terraform-resources-that-are-required-health-checks/
+* Is a custom backend better than Kubernetes Secrets https://flux-iac.github.io/tofu-controller/use-tf-controller/with-a-custom-backend/
+* Investigate plan-only mode
+* Create a local Kubernetes Secret remote backend and do local plans
