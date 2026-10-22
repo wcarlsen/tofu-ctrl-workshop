@@ -167,6 +167,8 @@ spec:
 
 ## Bonus goals
 
+Below is in no particular order.
+
 * Locate plans and states as Kubernetes Secrets
 * Try backup and restore of state https://flux-iac.github.io/tofu-controller/use-tf-controller/backup-and-restore-a-Terraform-state/
 * Try branch-planner https://flux-iac.github.io/tofu-controller/branch-planner/branch-planner-getting-started/
@@ -176,3 +178,4 @@ spec:
 * Is a custom backend better than Kubernetes Secrets https://flux-iac.github.io/tofu-controller/use-tf-controller/with-a-custom-backend/
 * Investigate plan-only mode
 * Create a local Kubernetes Secret remote backend and do local plans
+* Play with tfclt cli tool https://flux-iac.github.io/tofu-controller/tfctl/
