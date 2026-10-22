@@ -1,23 +1,23 @@
-apiVersion: infra.contrib.fluxcd.io/v1alpha2
-kind: Terraform
-metadata:
-  name: test
-  namespace: flux-system
-spec:
-  approvePlan: "auto"
-  interval: 2m
-  destroyResourcesOnDeletion: true
-  storeReadablePlan: human
-  path: ./infra
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
-    namespace: flux-system
-  vars:
-    - name: aws_region
-      value: "eu-west-1"
-  runnerPodTemplate:
-    spec:
-      envFrom:
-        - secretRef:
-            name: aws-credentials
+# apiVersion: infra.contrib.fluxcd.io/v1alpha2
+# kind: Terraform
+# metadata:
+#   name: test
+#   namespace: flux-system
+# spec:
+#   approvePlan: "auto"
+#   interval: 2m
+#   destroyResourcesOnDeletion: true
+#   storeReadablePlan: human
+#   path: ./infra
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system
+#     namespace: flux-system
+#   vars:
+#     - name: aws_region
+#       value: "eu-west-1"
+#   runnerPodTemplate:
+#     spec:
+#       envFrom:
+#         - secretRef:
+#             name: aws-credentials
