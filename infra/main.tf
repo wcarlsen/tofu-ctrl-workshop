@@ -30,3 +30,7 @@ resource "aws_iam_role" "this" {
   name               = "tofu-ctrl-test"
   assume_role_policy = data.aws_iam_policy_document.this.json
 }
+
+output "arn" {
+  value = aws_iam_role.this.arn
+}
