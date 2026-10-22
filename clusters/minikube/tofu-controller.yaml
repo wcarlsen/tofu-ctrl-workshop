@@ -30,4 +30,13 @@ spec:
   values:
     branchPlanner:
       enabled: true
-
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: flux-system
+  name: branch-planner
+data:
+  secretName: branch-planner-token
+  resources: |-
+    - namespace: flux-system
